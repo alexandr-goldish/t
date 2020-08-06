@@ -1,0 +1,21 @@
+.App {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    border: 2px solid #dddddd;
+}
+
+.card.blue {
+    background-color: dodgerblue;
+}
+
+.card.active {
+    border: 2px solid yellow;
+}

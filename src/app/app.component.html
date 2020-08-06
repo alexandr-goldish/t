@@ -1,0 +1,14 @@
+<div class="App">
+    <div>
+        <div class="area d-flex flex-wrap">
+            <div class="card" *ngFor="let block of this.areaBlocks"
+                 [ngClass]="{blue: block.type === this.enumBlue, active: this.selectedBlock.includes(block.index)}"
+                 (click)="this.addBlock(block.index)">
+            </div>
+        </div>
+
+        <p *ngIf="this.error">Пожалуйста выберите все синие блоки</p>
+
+        <button class="btn mt-3" (click)="this.sendBlocks()">Submit</button>
+    </div>
+</div>
